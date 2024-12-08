@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-header">
+            <img src="image/download.jpeg" alt="Logo" class="logo"> <!-- Logo Image -->
+            <button class="nav-toggle" aria-label="Toggle Navigation">&#9776;</button> <!-- Hamburger Icon -->
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <script>
+        // JavaScript for the toggle function
+        const navToggle = document.querySelector(".nav-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        navToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("nav-open");
+            navToggle.textContent = navLinks.classList.contains("nav-open") ? "✖" : "☰";
+        });
+    </script>
+
+    <section id="blog">
+        <div class="blog-heading">
+            <h3>My Blog</h3>
+        </div>
+
+        <div class="blog-box-container">
+
+            <div class="blog-box">
+                <div class="blog-box-img"></div>
+                    <img src="image/books.jpeg" alt="My Top Books">
+                    <a href="My_Top_Reads.html" class="blog-img-link" aria-label="Read more about My Top Books">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </a>
+
+                <div class="blog-box-text">
+                    <strong>Books & More</strong>
+                    <a href="Demon_Copperhead_Review.html" class="blog-text-link">Demon Copperhead - 2023 Pullitzer Prize for Fiction</a>
+                    <p>In this blog, I write about the novel Demon Copperhead - A boy growing up in rural Appalachia who struggles with poverty, addiction, and generational trauma. Read this review to join in the conversation about a great piece of literary work!</p>
+                    <div class="blog-author">
+                        <div class="blog-author-img">
+                            <img src="image/headshot.jpg" alt="">
+                        </div>
+
+                        <div class="blog-author-text">
+                            <strong>Ella Peplinski</strong>
+                            <span>Dec 6, 2024</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="blog-box">
+                <div class="blog-box-img"></div>
+                    <img src="image/books.jpeg" alt="My Top Books">
+                    <a href="#" class="blog-img-link" aria-label="Read more about My Top Books">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </a>
+
+                <div class="blog-box-text">
+                    <strong>Books & More</strong>
+                    <a href="#">My Top Reads of 2024 - A guide to the best books of the year.</a>
+                    <p>In this blog, I write about my top five books of 2024. These books were all five star reads and I could not put them down. Read the article to find your next book!</p>
+                    <div class="blog-author">
+                        <div class="blog-author-img">
+                            <img src="image/headshot.jpg" alt="">
+                        </div>
+
+                        <div class="blog-author-text">
+                            <strong>Ella Peplinski</strong>
+                            <span>Dec 3, 2024</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="blog-box">
+                <div class="blog-box-img"></div>
+                    <img src="image/books.jpeg" alt="My Top Books">
+                    <a href="#" class="blog-img-link" aria-label="Read more about My Top Books">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </a>
+
+                <div class="blog-box-text">
+                    <strong>Books & More</strong>
+                    <a href="#">I Will Find You - A Memoir debunking what it means to be a victim.</a>
+                    <p>Today, I discuss Joanna Connors memoir - I Will Find You. As a journalist who was raped on the job, Joanna tells her story through the victim narrative, debunking what it means to be a victim, and how, more often than not, it is not a flashy scene but a slow descent into losing onself. I talk about her empowering story in this review.</p>
+                    <div class="blog-author">
+                        <div class="blog-author-img">
+                            <img src="image/headshot.jpg" alt="">
+                        </div>
+
+                        <div class="blog-author-text">
+                            <strong>Ella Peplinski</strong>
+                            <span>Nov 26, 2024</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer class="footer">
+    <p>&copy; 2024 Ella Peplinski. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-header">
+            <img src="image/download.jpeg" alt="Logo" class="logo"> <!-- Logo Image -->
+            <button class="nav-toggle" aria-label="Toggle Navigation">&#9776;</button> <!-- Hamburger Icon -->
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <script>
+        // JavaScript for the toggle function
+        const navToggle = document.querySelector(".nav-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        navToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("nav-open");
+            navToggle.textContent = navLinks.classList.contains("nav-open") ? "✖" : "☰";
+        });
+    </script>
+
+
+    <section class="banner">
+        <h1>Behind the Code</h1>
+    </section>
+
+    <div class="cityscape-container">
+        <img src="image/chicago.JPG" alt="Chicago Cityscape" class="cityscape">
+    </div>
+
+    <section class="about-text-section">
+        <p class="about-paragraph">
+            Hi, my name is Ella Peplinski. I’m currently a senior at the University of North Carolina at Chapel Hill, where I’m studying Statistics and Information Science. Alongside my studies, I work part-time as a data scientist for AGCO Corporation. Outside of coding and work, I have a passion for traveling, reading, and running. Upon graduating, I’m excited to embark on my full-time career and continue exploring the world and all the incredible experiences it has to offer.
+            <br><br>
+            I hope you enjoy my website—feel free to click through my projects and my blog. All of the images you see on my site were taken by me during my travels!
+        </p>
+    </section>
+    
+
+<footer class="footer">
+    <p>&copy; 2024 Ella Peplinski. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

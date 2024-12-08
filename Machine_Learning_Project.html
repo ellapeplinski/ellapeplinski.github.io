@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-header">
+            <img src="image/download.jpeg" alt="Logo" class="logo"> <!-- Logo Image -->
+            <button class="nav-toggle" aria-label="Toggle Navigation">&#9776;</button> <!-- Hamburger Icon -->
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <script>
+        // JavaScript for the toggle function
+        const navToggle = document.querySelector(".nav-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        navToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("nav-open");
+            navToggle.textContent = navLinks.classList.contains("nav-open") ? "✖" : "☰";
+        });
+    </script>
+
+    <div class="project-container">
+        <div class="abstract-section">
+            <h2>Project Overview</h2>
+            <p>
+                In Fall 2024, I worked on a semester-long journey to use machine learning models for cancer subtyping. While this is already a widely researched field, my group’s analysis focused on comparing varying levels of data complexity and analyzing their effects on subtyping accuracy. For instance, gene analysis is often high-dimensional, leading us to investigate: does classification accuracy improve with more genes, or do you only need a small subset of genes that explain the most variance in the data?
+            </p>
+            <p>
+                This project compared <strong>Support Vector Machines (SVMs)</strong>, <strong>Random Forests</strong>, and <strong>Boosting Algorithms</strong> to evaluate the accuracy of breast cancer tissue subtyping. Our dataset included five different cancerous tissue types and one normal tissue type. The <strong>SVM</strong>, trained on the full dataset, achieved an impressive <strong>97% accuracy</strong>, showcasing stellar performance given the small test size.
+            </p>
+            <p>
+                Read through the report attached to this page to explore our methodologies, model evaluation techniques, and potential applications to other clinical practices.
+            </p>
+
+        </div>
+
+        <div class="pdf-section">
+            <iframe src="project/Final Report STOR 565 copy.pdf" title="Machine Learning Project Paper" width="100%" height="600px"></iframe>
+        </div>
+    </div>
+
+<footer class="footer">
+    <p>&copy; 2024 Ella Peplinski. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

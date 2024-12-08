@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+
+<body class="projects-page">
+    <nav class="nav">
+        <div class="nav-header">
+            <img src="image/download.jpeg" alt="Logo" class="logo"> <!-- Logo Image -->
+            <button class="nav-toggle" aria-label="Toggle Navigation">&#9776;</button> <!-- Hamburger Icon -->
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <script>
+        // JavaScript for the toggle function
+        const navToggle = document.querySelector(".nav-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        navToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("nav-open");
+            navToggle.textContent = navLinks.classList.contains("nav-open") ? "✖" : "☰";
+        });
+    </script>
+
+    <section class="banner">
+        <img src="image/banner.png" alt="Tech Banner">
+    </section>
+
+    <main class="projects">
+        <article class="project-item">
+            <h1>Deep Learning for Weather Forecasting</h1>
+            <img src="image/deeplearning.jpeg" alt="Image of Deep Learning Project">
+            <p>This project involved comparing LSTM, GRU, and Transformer Neural Networks for precipitation prediction in the Midwestern United States.</p>
+            <a href="Deep_Learning_Project.html" class="project-link">View Project</a>
+        </article>
+    
+        <article class="project-item">
+            <h1>Tissue Analysis for Breast Cancer Subtyping with ML Algorithms</h1>
+            <img src="image/breast.jpeg" alt="Breast Cancer Cell">
+            <p>This project focused on breast cancer subtyping using Support Vector Machines and Random Forest Algorithms.</p>
+            <a href="Machine_Learning_Project.html" class="project-link">View Project</a>
+        </article>
+    
+        <article class="project-item">
+            <h1>Modeling Life Expectancy - Does Location Matter?</h1>
+            <img src="image/life_expectancy_2.png" alt="Modeling Life Expectancy - does location matter?">
+            <p>This project involved the modeling of life expectancy worldwide, focusing on disparities between geographies and cultures.</p>
+            <a href="Data_Science_Project.html" class="project-link">View Project</a>
+        </article>
+    
+        <article class="project-item">
+            <h1>Classical Mythology  - The Myth of Medea</h1>
+            <img src="image/medea.jpeg" alt="Jason and Medea">
+            <p>This project revolves around the Myth of Medea - her heartbreak and revenge - and is accompanied by an interactive playlist.</p>
+            <a href="Classical_Mythology_Project.html" class="project-link">View Project</a>
+        </article>
+    
+        <article class="project-item">
+            <h1>Mackinac Island Photography</h1>
+            <img src="image/mackinac.jpeg" alt="Mackinac Island">
+            <p>Not so much of a project as a passion, this link will take you through the beauty of Mackinac Island, Michigan.</p>
+            <a href="#" class="project-link">View Project</a>
+        </article>
+    </main>
+    
+    <script src="js/scripts.js"></script>
+
+<footer class="footer">
+    <p>&copy; 2024 Ella Peplinski. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-header">
+            <img src="image/download.jpeg" alt="Logo" class="logo"> <!-- Logo Image -->
+            <button class="nav-toggle" aria-label="Toggle Navigation">&#9776;</button> <!-- Hamburger Icon -->
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <script>
+        // JavaScript for the toggle function
+        const navToggle = document.querySelector(".nav-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        navToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("nav-open");
+            navToggle.textContent = navLinks.classList.contains("nav-open") ? "✖" : "☰";
+        });
+    </script>
+
+    <div class="project-container">
+        <div class="abstract-section">
+            <h2>Project Overview</h2>
+            <p>
+                When I first started diving into data science, one of the projects that really shaped my learning was modeling life expectancy to understand the factors that contribute to higher life expectancies in certain countries or regions. Is it their lifestyle, economic status, healthcare infrastructure, or something else entirely? This project sought to explore those questions by analyzing a dataset that included metrics like GDP, resource composition, BPI (basic prosperity index), infant mortality rates, agricultural scores, and more.
+            </p>
+            <p>
+                We used a variety of statistical and machine learning techniques to model life expectancy, including <strong>linear regression</strong> and <strong>decision tree models</strong>. The project also features interactive visualizations that allow you to explore how different countries perform in these key categories. By looking at correlations between life expectancy and various predictors, we found that the most significant factors were <strong>adult mortality rates</strong>, <strong>access to education</strong> (measured by schooling levels), <strong>BMI</strong>, <strong>population size</strong>, <strong>income inequality</strong> (measured by the Gini coefficient), and <strong>healthcare expenditure</strong>.
+            </p>
+            <p>
+                Through this analysis, we were able to identify patterns and trends that suggest which variables are the most predictive of life expectancy across different regions. We also explored model performance, fine-tuning parameters to improve accuracy and interpretability.
+            </p>
+            <p>
+                Check out the accompanying report to dive deeper into the methods we used, see the models we built and tested, and explore the visualizations that highlight the relationships between these variables.
+            </p>
+
+        </div>
+
+        <div class="pdf-section">
+            <iframe src="project/Data_Science_Final_Report copy.pdf" title="Machine Learning Project Paper" width="100%" height="600px"></iframe>
+        </div>
+    </div>
+
+<footer class="footer">
+    <p>&copy; 2024 Ella Peplinski. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

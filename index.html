@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-header">
+            <img src="image/download.jpeg" alt="Logo" class="logo"> <!-- Logo Image -->
+            <button class="nav-toggle" aria-label="Toggle Navigation">&#9776;</button> <!-- Hamburger Icon -->
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <script>
+        // JavaScript for the toggle function
+        const navToggle = document.querySelector(".nav-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        navToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("nav-open");
+            navToggle.textContent = navLinks.classList.contains("nav-open") ? "✖" : "☰";
+        });
+    </script>
+
+    <div class="home-container">
+        <section class = "projects-section">
+            <h1>Highlighted Projects</h1>
+            <a href="Deep_Learning_Project.html">
+                <button class="project-button">Deep Learning For Weather Forecasting</button>
+            </a>
+            <a href="Machine_Learning_Project.html">
+                <button class="project-button">Tissue Analysis: Cancer Subtyping with ML</button>
+            </a>
+            <a href="Data_Science_Project.html">
+                <button class="project-button">Modeling Life Expectancy</button>
+            </a>
+        </section>
+    
+
+        <section class="about-section">
+            <div class="headshot">
+                <img src="image/headshot.jpg" alt = "Ella Peplinski Headshot">
+            </div>
+
+            <div class="about-text">
+                <h2>Hello, My Name Is Ella Peplinski.</h2>
+                <p>  I'm Ella Peplinski, a senior at UNC Chapel Hill, double majoring in Statistics and Information Science. I'm passionate about leveraging data to solve real-world problems, and currently, I work as a Data Scientist at AGCO Corporation, where I focus on analytics to improve efficiency in the agricultural sector. My interests span across data science, web development, and machine learning, and I enjoy exploring new ways to make data-driven decisions.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <section class="image-section">
+        <img src="image/bean.jpg" alt="Image 1" class="image">
+        <img src="image/water.jpg" alt="Image 2" class="image">
+        <img src="image/rock.jpg" alt="Image 3" class="image">
+        <img src="image/dusk.jpg" alt="Image 4" class="image">
+    </section>
+
+    <section class="quote-section">
+        <blockquote class="quote">
+            "Education is the most powerful weapon which you can use to change the world."
+            <span class="author">-Nelson Mandela</span>
+        </blockquote>
+    </section>
+
+
+<footer class="footer">
+    <p>&copy; 2024 Ella Peplinski. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

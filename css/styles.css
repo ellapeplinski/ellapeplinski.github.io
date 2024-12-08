@@ -1,0 +1,940 @@
+body {
+    font-family: 'Montserrat', sans-serif; /* Using the Google Font*/
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    font-family: 'Montserrat', sans-serif;
+}
+
+li {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    background-color: #212227;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    max-height: 40px;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; 
+    flex-direction: column; /* Stack items vertically on mobile */
+}
+
+.nav-links li {
+    margin: 10px 0; /* Add some spacing between links */
+}
+
+.nav-links a {
+    color: #FFFBFE; 
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hamburger Icon */
+.nav-toggle {
+    background-color: transparent;
+    color: #FFFBFE;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* When the navigation is opened */
+.nav-open {
+    display: flex; /* Show links when opened */
+}
+
+/* Container Styling */
+.home-container {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Highlighted Projects Section */
+.projects-section {
+    background-color: #FFFBFE;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projects-section h1 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+a {
+    text-decoration: none;
+}
+.project-button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 12px 20px;
+    font-size: 1em;
+    background-color: #869eAB;
+    color: #212227;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.project-button:hover {
+    background-color: #BDD4E7;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    flex-direction: row; /* Image and text side by side */
+    gap: 10px; /* Space between the image and text */
+    align-items: center;
+    background-color: #FFFBFE;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headshot Styling */
+.headshot img {
+    width: 100px;
+    height: 100px;
+    border-radius: 0%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* About Text */
+.about-text h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.about-text p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Image Section */
+.image-section {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 20px 0; 
+    margin-bottom: 20px;
+}
+
+/* Image Styling for Mobile */
+.image-section .image {
+    width: 45%; 
+    max-width: 300px; 
+    height: 250px;
+    object-fit: cover;
+    transition: transform 1.0s ease; /* Smooth transition for the hover effect */
+}
+
+/* Quote Section Styling */
+.quote-section {
+    text-align: center; /* Center the quote */
+    margin-top: 40px; /* Add space above the quote */
+    margin-bottom: 40px; /* Add space below the quote */
+}
+
+/* Styling for the quote text */
+.quote {
+    font-size: 1.5rem; /* Big font size */
+    font-weight: bold; /* Make the quote bold */
+    font-style: italic; /* Italicized for a quote effect */
+    line-height: 1.5; /* Spacing between lines of the quote */
+    color: #212227; /* Dark color for visibility */
+    max-width: 800px; /* Limit the width of the quote */
+    margin: 0 auto; /* Center the quote */
+    padding: 10px; /* Add padding around the quote */
+}
+
+/* Styling for the author */
+.author {
+    display: block; /* Make the author a block-level element */
+    margin-top: 10px; /* Add space between quote and author */
+    font-size: 1.2rem; /* Slightly smaller font for the author */
+    font-weight: normal; /* Not bold */
+    color: #212227; /* Lighter color for the author's name */
+}
+
+.projects-page .banner {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    /*font-weight: bold; /* Make the quote bold */
+    /*text-align: center; */
+    /*padding: 40px 40px; */
+    /*font-size: 1.8rem; */
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.banner {
+    background-color: #BDD4E7;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px 40px;
+    font-size: 1.8rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 2.0rem;
+    font-weight: bold;
+    line-height: 1.2;
+    padding-bottom: 15px;
+}
+
+.banner .review-by {
+    margin: 0;
+    font-size: 1rem;
+    color: #637074;
+}
+.projects-page .banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cityscape-container {
+    text-align: center;
+    margin-top: -30px;
+}
+
+.cityscape {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
+/* Mobile First */
+.about-text-section {
+    padding: 20px;
+    text-align: center; /* Centers the text */
+    margin-bottom: 40px;
+}
+
+.about-paragraph {
+    font-size: 16px; /* Adjust font size for mobile */
+    line-height: 1.6; /* Adds space between lines */
+    color: #212227; /* Dark text color */
+    margin-top: 20px;
+}
+
+/* Reset box-sizing for all elements */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 0.8rem;
+}
+
+/* Articles and project cards styling */
+article {
+    margin: 1rem 0;
+}
+
+/* Mobile-first styling */
+.project-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #212227;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center; /* Center content */
+}
+
+.project-item > h1 {
+    margin: 1rem 0 0.5rem; /* Title margin adjustment */
+    font-size: 1.25rem; /* Adjusted font size for readability */
+}
+
+.project-item > p {
+    margin: 0.25rem 0 1rem;
+    font-size: 1rem; /* Adjust text size */
+}
+
+/* Adjust images */
+.project-item img {
+    width: 100%; /* Make image responsive */
+    height: 200px; /* Maintain aspect ratio */
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Links styled as buttons */
+.project-link {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #869eAB;
+    color: #FFFBFE;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: auto; /* Push to bottom of card */
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #BDD4E7;
+}
+
+.projects-page .projects {
+    margin-bottom: 50px;
+}
+
+#blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    background-color: #FFFBFE;
+}
+
+.blog-heading h3{
+    font-size: 2.4rem;
+    color: #212227;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 2.4rem;
+    margin-top: 5px;
+}
+
+.blog-heading strong {
+    color: #869eAB;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.blog-box-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1050px;
+    width: 90%;
+    margin-top: 50px;
+}
+
+.blog-box {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: all ease 0.3s;
+}
+
+.blog-box:hover {
+    background-color: white;
+    box-shadow: 16px 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.blog-box-img {
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.blog-box-img img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    transition: all ease 0.3s;
+    position: relative;
+}
+
+.blog-img-link {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFBFE;
+    color: #212227;
+    box-shadow: 2px 2px 30px rgba(20, 97, 212, 0.12);
+    animation: fade 0.3s;
+}
+.blog-text-link{
+    text-decoration: none;
+    color: #212227;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+
+.blog-box-text {
+    color: #869eAB;
+}
+
+
+.blog-box:hover .blog-box-img a{
+    display: flex;
+}
+
+.blog-box:hover .blog-box-img img{
+    filter: blur(3px);
+}
+
+.blog-box-text{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px 20px 10px;
+}
+
+.blog-box-text strong,
+.blog-box-text p{
+    color: #212227;
+    font-size: 0.9rem;
+    font-weight: 400;
+
+}
+
+.blog-box-text a{
+    font-size: 1.4rem;
+    color: #212227;
+    font-weight: 800;
+    line-height: 1.8rem;
+    margin: 5px 0px 10px 0px;
+    text-decoration: none;
+}
+
+.blog-box-text a:hover{
+    color:#869eAB;
+}
+
+.blog-box-text p{
+    display: -webkit-box; /* Required for WebKit line clamping */
+    -webkit-box-orient: vertical; /* Required for WebKit line clamping */
+    -webkit-line-clamp: 3; /* Limits text to 3 lines */
+    overflow: hidden; /* Ensures the extra text is hidden */
+    line-clamp: 3; /* Standard property for future compatibility */
+}
+
+.blog-author{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.blog-author-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.blog-author-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog-author-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-author-text-strong{
+    color: #212227;
+    font-weight: 800;
+}
+
+.blog-author-text span{
+    color:#869eAB;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/* Keyframe Animation for Hover Effect */
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1); /* Normal size */
+    }
+    50% {
+        transform: scale(1.1); /* Slightly larger */
+    }
+    100% {
+        transform: scale(1); /* Back to normal size */
+    }
+}
+
+/* Hover Effect for Mobile */
+.image-section .image:hover {
+    animation: zoomInOut 1.0s ease; /* Apply the zoom animation */
+}
+
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.abstract-section {
+    background-color: #FFFBFE;
+    border: 1px solid #212227;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.abstract-section h2{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.abstract-section p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: #212227;
+}
+
+.pdf-section iframe {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.book-header {
+    width: 100%;
+    background: #BDD4E7;
+    padding: 2em 0;
+    text-align: center;
+}
+
+.book-header h1 {
+    font-style: italic;
+    font-weight: normal;
+    color: #212227;
+}
+
+.book-header .author {
+    font-size: 0.8em;
+    font-weight: normal;
+    text-align: center;
+    margin-top: -1em;
+    color: #869eAB;
+}
+
+.content {
+    display: block;
+    margin: 20px auto;
+    padding: 0;
+    max-width: 95%;
+    /*max-width: 750px;*/
+    /*margin: 40px auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;*/
+}
+
+.date {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    /*float: left;
+    margin-right: 1em;
+    color: #869eAB;
+    text-align: left;
+    font-size: 1em;*/
+}
+
+.date .month {
+    display: inline-block;
+    font-size: 1rem;
+    color: #869eAB;
+    margin-right: 0.3em;
+}
+
+.date .day {
+    display: inline-block;
+    color:#869eAB;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+/*.date-line {
+    display: none;
+}*/
+
+.article {
+    width: 100%;
+    padding: 0;
+    border-left: 3px solid #212227;
+    margin-bottom: 40px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin: 0 auto 2em auto;
+    padding: 0 1.3em 0 1.3em;
+    border-left: 5px solid #212227;
+}
+
+.article h2 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #212227;
+    margin: 0;
+}
+
+.article h3 {
+    font-weight: normal;
+    font-size: 16px;
+    color: #212227;
+    font-style: italic;
+    margin: 0 0 1em 0;
+}
+
+.author-name{
+    color: #869eAB;
+    background: none;
+    text-decoration: none;
+}
+
+.article p {
+    margin: 0;
+    padding-top: 8px;
+    color: #212227;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 150%;
+    text-indent: 2em;
+    margin-bottom: 20px;
+}
+
+.article .firstpara {
+    text-indent: 0;
+}
+
+.footer {
+    background-color: #212227;
+    color: #FFFBFE;
+    text-align: center;
+    margin-top: 105px;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex; /* Show links horizontally */
+        flex-direction: row; /* Arrange items horizontally */
+    }
+
+    .nav-links li {
+        margin: 0 15px;
+    }
+
+    .nav-toggle {
+        display: none; /* Hide hamburger icon on larger screens */
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* Grid Layout for Desktop */
+    .home-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* First column for projects, second for about */
+        gap: 20px; /* Space between grid columns */
+    }
+
+    /* Highlighted Projects Section */
+    .projects-section {
+        grid-column: 1; /* Stays in the first column */
+    }
+
+    /* About Section */
+    .about-section {
+        grid-column: 2; /* Occupies the second column */
+        display: grid;
+        grid-template-columns: auto 1fr; /* Two columns: image and text */
+        align-items: center; /* Vertically centers content */
+        gap:50px; /* Space between headshot and text */
+        background-color: #FFFBFE;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Headshot Styling for Desktop */
+    .headshot img {
+        width: 150px; /* Larger image for desktop */
+        height: 150px;
+    }
+
+    /* About Text */
+    .about-text h2 {
+        font-size: 2em; /* Larger heading for desktop */
+    }
+
+    .about-text p {
+        font-size: 1.2em; /* Larger text for better readability */
+    }
+}
+
+/* Desktop View (Media Query) */
+@media screen and (min-width: 768px) {
+    .image-section {
+        flex-direction: row; /* Align images in a row for desktop */
+    }
+
+    .image-section .image {
+        width: 23%; /* Four images in one row (leaving some space between them) */
+        height: 300px;
+    }
+
+    /* Hover Effect for Desktop */
+    .image-section .image:hover {
+        animation: zoomInOut 1.0s ease; /* Apply the zoom animation */
+    }
+}
+
+/* Add space between images and footer in mobile view */
+@media screen and (max-width: 767px) {
+    .image-section {
+        margin-bottom: 60px; /* Add space at the bottom for mobile */
+    }
+}
+
+
+/* Adjustments for Mobile View */
+@media screen and (max-width: 767px) {
+    .quote {
+        font-size: 2rem; /* Slightly smaller for mobile */
+        max-width: 90%; /* Allow the quote to fit better on smaller screens */
+    }
+
+    .author {
+        font-size: 1rem; /* Adjust author font size for mobile */
+    }
+}
+
+/* Adjustments for Desktop View */
+@media screen and (min-width: 768px) {
+    .quote {
+        font-size: 3rem; /* Larger font for desktop */
+        max-width: 70%; /* Make the quote narrower on larger screens */
+    }
+}
+
+/* Adjustments for larger screens banner on about page  */
+@media screen and (min-width: 768px) {
+    .banner {
+        padding: 60px 30px; /* More padding for a spacious look */
+        font-size: 2.2rem;
+        /*height: 375px;*/
+    }
+
+    .banner h1 {
+        font-size: 3rem;
+        padding-bottom: 30px;
+    }
+}
+
+/* cityscape media query */
+@media (min-width: 768px) {
+    .cityscape-container {
+        margin-top: -45px; /* Increase the overlap for desktop view */
+    }
+    .cityscape {
+        width: 70%;
+        max-width: 600px;
+        object-fit: cover;
+    }
+}
+
+/* Desktop Styles for Fancy Banner */
+@media (min-width: 768px) {
+    .projects-page .banner {
+        height: 375px;
+    }
+
+    .projects-page .banner h1 {
+        font-size: 3rem;
+        bottom: 30px;
+    }
+}
+
+/* For Desktop */
+@media screen and (min-width: 768px) {
+    .about-paragraph {
+        font-size: 18px; /* Larger font for desktop */
+        max-width: 800px; /* Limit the width of the paragraph */
+        margin: 0 auto; /* Center the paragraph */
+    }
+}
+
+/* Grid styling for wider screens (desktop-first approach) */
+@supports (display: grid) {
+    main {
+        max-width: 100%; /* Full width for larger screens */
+        margin: 0;
+    }
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 1rem;
+    }
+}
+
+/* Ensure buttons do not inherit button-specific styles */
+article button {
+    display: none; /* Hides original button tag if present */
+}
+
+@media(max-width:920px){
+    .blog-box-container{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px 0px;
+    }
+}
+
+@media(max-width:600px){
+    .blog-box-container{
+        grid-template-columns: 1fr;
+    }
+    .blog-heading h3{
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+    }
+}
+
+/* Media queury for deep learning project page */
+@media (min-width: 768px) {
+    .project-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 30px;
+        padding: 40px;
+    }
+
+    .abstract-section {
+        grid-column: 1; /* Left column */
+    }
+
+    .pdf-section {
+        grid-column: 2 / span 2; /* Middle and right columns */
+    }
+
+    .pdf-section iframe {
+        height: 800px; /* Increase height for desktop */
+    }
+    
+    .abstract-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .abstract-section p {
+        font-size: 0.9rem;
+        line-height: 1.8;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .content {
+        display: flex; /* Switch to side-by-side layout */
+        gap: 1em;
+        max-width: 750px;
+    }
+
+    .date {
+        flex-shrink: 0; /* Keeps the date block fixed */
+        width: 80px; /* Fixed width for the date */
+        text-align: center;
+    }
+
+    .article {
+        flex-grow: 1; /* Allows the article to expand */
+        padding: 0 1.3em;
+    }
+
+    .article h2 {
+        font-size: 30px;
+    }
+
+    .article p {
+        font-size: 1.2em;
+        text-indent: 2em;
+    }
+}

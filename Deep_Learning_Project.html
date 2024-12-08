@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-header">
+            <img src="image/download.jpeg" alt="Logo" class="logo"> <!-- Logo Image -->
+            <button class="nav-toggle" aria-label="Toggle Navigation">&#9776;</button> <!-- Hamburger Icon -->
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <script>
+        // JavaScript for the toggle function
+        const navToggle = document.querySelector(".nav-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        navToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("nav-open");
+            navToggle.textContent = navLinks.classList.contains("nav-open") ? "✖" : "☰";
+        });
+    </script>
+
+    <div class="project-container">
+        <div class="abstract-section">
+            <h2>Project Overview</h2>
+            <p>
+                In the Fall Semester of 2024, I worked on a three-month project focused on weather forecasting in dry regions. My goal was to address the challenge of accurately predicting precipitation in arid areas, where even small amounts of rainfall can significantly impact agriculture. Reliable forecasts in these regions are crucial, as they can help optimize water usage and support crop planning.
+            </p>
+            <p>
+                I began by building a <strong>Long Short-Term Memory (LSTM)</strong> model, which leverages its unique ability to remember historical patterns through its gated memory structure. Next, I implemented a <strong>Gated Recurrent Unit (GRU)</strong> model, which streamlines the computational process by using fewer parameters while maintaining the ability to handle sequential data effectively. Finally, the best-performing model was a <strong>Transformer</strong> with four attention heads, which achieved a remarkable accuracy of 90% for predicting precipitation values of 2 millimeters.
+            </p>
+            <p>
+                Explore the report attached to this page for a comprehensive breakdown of the model-building process and evaluation.
+            </p>
+
+        </div>
+
+        <div class="pdf-section">
+            <iframe src="project/Final_Report_STOR566 copy.pdf" title="Deep Learning Project Paper" width="100%" height="600px"></iframe>
+        </div>
+    </div>
+
+    
+
+
+<footer class="footer">
+    <p>&copy; 2024 Ella Peplinski. All Rights Reserved.</p>
+</footer>
+        
+</body>
+</html>

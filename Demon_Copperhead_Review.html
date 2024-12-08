@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-header">
+            <img src="image/download.jpeg" alt="Logo" class="logo"> <!-- Logo Image -->
+            <button class="nav-toggle" aria-label="Toggle Navigation">&#9776;</button> <!-- Hamburger Icon -->
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <script>
+        // JavaScript for the toggle function
+        const navToggle = document.querySelector(".nav-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        navToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("nav-open");
+            navToggle.textContent = navLinks.classList.contains("nav-open") ? "✖" : "☰";
+        });
+    </script>
+
+    <section class="banner">
+        <h1>Demon Copperhead</h1>
+        <p class="review-by">Review By: Ella Peplinski</p>
+    </section>
+
+    <div class="content">
+        <div class="date">
+            <span class="month">December</span>
+            <span class="day">6</span>
+        </div>
+        <div class="article">
+            <h2>Who is Demon Copperhead?</h2>
+            <h3>Posted by <span class="author-name">Ella Peplinski</span></h3>
+            <p class="firstpara"><span class="firstcharacter">D</span>emon Copperhead by Barbara Kingsolver is a powerful and deeply moving read that left a lasting impact on me. The novel offers a raw, unflinching look at the opioid crisis, but it also provides a profound exploration of rural life, poverty, and the cyclical nature of abuse and addiction. Through Demon's journey, I learned so much about the complexities of living in a small, rural county and the unique struggles faced by its residents.</p>
+            <p>One aspect that stood out to me was the portrayal of the term "redneck" or "hillbilly," which is often used pejoratively but is, in fact, offensive to the people of Lee County. This was something I had never given much thought to, and it made me reflect on how language shapes our perceptions of others. The tension between land and economy towards the end of the book was also particularly thought-provoking, shedding light on the ways these issues intersect in rural communities.</p>
+            <p>Demon's story was heartbreaking and unsettling, as I watched him be wronged time and time again by the people who were supposed to care for him. What struck me most, however, was Kingsolver's depiction of the systemic nature of these wrongs. It wasn't always about individual fault but about larger societal forces at play. For example, the DSS worker who neglects Demon is clearly overworked and underpaid—her lack of care is a reflection of the system, not just her character. Similarly, while Demon’s mother was far from perfect, Kingsolver reminded us that she grew up in foster care with no support system, no one to guide her, and no one warning her about the dangers of drugs. This illustrates the devastating cycle of poverty, abuse, and addiction that is difficult to break.</p>
+            <p>The portrayal of Emmy's story also left a deep impression on me. Raised by a woman who tried to save her from the horrors of foster care, Emmy nonetheless fell into the same destructive patterns as Demon, succumbing to drug addiction and prostitution. This highlights the powerful impact of one's environment and the people around them—no matter how strong the maternal love may be, external influences can still have devastating effects.</p>
+            <p>Demon and Dori’s relationship was another aspect of the book that profoundly moved me. Demon falls in love with Dori, but addiction consumes her, ultimately withering her away and leaving him to care for her when he should have been the one receiving care. It’s tragic to witness their bond, and yet, even as Dori deteriorates, Demon vows to never leave her. When she dies, it's both a relief and a tragedy, as her death marks the end of one painful chapter but opens the door to a healthier, safer life for Demon.</p>
+            <p>By the end of the novel, I had hope for Demon. His connection with Angus seems to offer him the possibility of a better future, one where he can break free from the cycle of despair. I would love to read a book about their story—it's a relationship that promises healing and redemption.</p>
+            <p>The depiction of the opioid crisis in Demon Copperhead was eye-opening. While I was already familiar with the general narrative of the crisis, Kingsolver’s approach—focusing on rural, poor communities—was new and enlightening. Drug reps targeting these areas, the prevalence of disability checks being tied to prescriptions, and the devastating consequences of addiction on these tight-knit communities were all details that added a deeper understanding to the issue. The portrayal of Dr. Watts, who serves as a symbol of the greed and indifference that fueled the crisis, was chilling.</p>
+            <p>What resonated most with me was the overall theme of the cyclical nature of poverty, abuse, and addiction. It's incredibly difficult to break free from the life you were born into, especially when there is no outside support, no village to help you escape. The story asks how one can leave a town they’ve lived in their whole life, with no ties to the outside world. The book is a powerful reminder of how deeply one's environment and the people they surround themselves with influence their future—and how difficult it is to escape the cycles of despair that can feel like home.</p>
+            <p>Some of my favorite quotes from the book are:</p>
+            <ul>
+                <li>"At some point the shows, comic books, drawings, and my dreams all got mashed up so it was like there wasn't a me anymore. Just a quiet boy that looked like me with a breast inside, waiting to burst in a gamma warrior rage explosion."</li>
+                <li>"Up to then, I was a casual collection of reasons to hate Stoner. That night a fire got lit. For what he'd done to my head, I would burn the man down."</li>
+                <li>"We both lay back down, and she looked at me in the eyes, and we were sad together for a while. I'll never forget how that felt. Like not being hungry."</li>
+                <li>"Many had tried their best with us, but we came out of too-hungry mothers. Four demons spawned by four different starving hearts."</li>
+                <li>"And if hard work counts for anything, I was crushing it. Addiction is not for the lazy."</li>
+                <li>"Live long enough, and all things you ever loved can turn around to scorch you blind. The wonder is that you could start life with nothing, end with nothing, and lose so much in between."</li>
+            </ul>
+            <p>Demon Copperhead is a powerful, heartbreaking, and thought-provoking novel that I highly recommend. It's a story that will stay with you long after you've finished reading it.</p>
+        </div>        
+    </div>
+
+
+<footer class="footer">
+    <p>&copy; 2024 Ella Peplinski. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

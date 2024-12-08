@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-header">
+            <img src="image/download.jpeg" alt="Logo" class="logo"> <!-- Logo Image -->
+            <button class="nav-toggle" aria-label="Toggle Navigation">&#9776;</button> <!-- Hamburger Icon -->
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <script>
+        // JavaScript for the toggle function
+        const navToggle = document.querySelector(".nav-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        navToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("nav-open");
+            navToggle.textContent = navLinks.classList.contains("nav-open") ? "✖" : "☰";
+        });
+    </script>
+
+    <div class="project-container">
+        <div class="abstract-section">
+            <h2>Project Overview</h2>
+            <p>
+                Medea, a formidable sorceress in Greek mythology, is renowned for her tragic tale of love, betrayal, and vengeance. She played a pivotal role in helping the hero Jason obtain the Golden Fleece, using her magical powers to assist him in overcoming daunting challenges. However, after years of marriage, Jason betrays Medea by marrying another woman, Glauce. Consumed by rage and heartbreak, Medea exacts her revenge by murdering their two children and Glauce, shattering Jason’s happiness forever. Medea’s actions, driven by profound emotional turmoil and betrayal, cement her as one of the most complex and tragic figures in Greek mythology.
+            </p>
+            <p>
+                For this project, I have sought to capture Medea’s emotional journey of heartbreak and vengeance through the lens of modern music, particularly focusing on contemporary female pop artists. Each song in the curated playlist is thoughtfully chosen to mirror Medea’s internal struggle and emotional arc, taking you on a powerful journey through her pain and fury.
+            </p>
+            <p>
+                Scroll through the accompanying PDF to learn more about the song selection, and use the provided link to listen to the playlist in real-time.
+            </p>
+
+        </div>
+
+        <div class="pdf-section">
+            <iframe src="project/The Heartbreak of Medea - Creative Project copy.pdf" title="Machine Learning Project Paper" width="100%" height="600px"></iframe>
+        </div>
+    </div>
+
+<footer class="footer">
+    <p>&copy; 2024 Ella Peplinski. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
